@@ -20,7 +20,7 @@ public class Coulumbs_ES extends AppCompatActivity {
         entry1 = (EditText) findViewById(R.id.charge1);
         entry2 = (EditText) findViewById(R.id.charge2);
         entry3 = (EditText) findViewById(R.id.dist);
-        result = (TextView) findViewById(R.id.result);
+        result = (TextView) findViewById(R.id.result_ef);
     }
 
     public void Coulumbs_es(View view){
@@ -28,9 +28,7 @@ public class Coulumbs_ES extends AppCompatActivity {
         double q1 = Double.parseDouble(entry1.getText().toString());
         double q2 = Double.parseDouble(entry2.getText().toString());
         double r = Double.parseDouble(entry3.getText().toString());
-
-        String res = Double.toString(k * q1 * q2 / (r * r));
-        result.setText(String.valueOf(com.deskmate.DeskmateRes.expConverter(res)));
+        result.setText(String.valueOf(com.deskmate.DeskmateRes.expConverter(Double.toString(k * q1 * q2 / (r * r)))));
 
 
     }

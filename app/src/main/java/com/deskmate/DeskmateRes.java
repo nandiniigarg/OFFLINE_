@@ -1,12 +1,11 @@
 package com.deskmate;
 
-public class DeskmateRes extends Coulumbs_ES {
+public class DeskmateRes {
 
     static double speedOfLight = 3*Math.pow(10,8); //(m/s)
     static double plancksCnst = 6.63*Math.pow(10,-34); //
+    static double coulumbsCnst = 9*Math.pow(10,9); //  N m2/C2
 
-
-    @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
 
     }
@@ -36,7 +35,7 @@ public class DeskmateRes extends Coulumbs_ES {
         String power = superscript(res.substring(indexOfE+1, res.length()));
         final_res = res.substring(0, indexOfE);
         final_res += " x 10";
-        final_res += (power+" N");
+        final_res += power;
 
         return final_res;
 
