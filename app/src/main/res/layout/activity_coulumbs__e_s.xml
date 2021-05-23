@@ -36,7 +36,7 @@
         android:id="@+id/charge1"
         android:layout_width="96dp"
         android:layout_height="45dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="28dp"
         android:autoText="false"
         android:background="#E3526E"
         android:ems="10"
@@ -45,7 +45,7 @@
         android:textSize="18sp"
         app:flow_horizontalAlign="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintHorizontal_bias="0.204"
         app:layout_constraintStart_toEndOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
@@ -87,16 +87,30 @@
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/charge2" />
 
+    <EditText
+        android:id="@+id/force_cl"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:background="#E3526E"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.22"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/dist" />
+
     <Button
         android:id="@+id/coulumbs_es"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="40dp"
         android:onClick="Coulumbs_es"
         android:text="Calculate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dist" />
+        app:layout_constraintTop_toBottomOf="@+id/force_cl" />
 
     <TextView
         android:id="@+id/textView3"
@@ -132,6 +146,18 @@
         android:textColor="#E3526E"
         android:textSize="18sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/dist"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Force"
+        android:textColor="#E3526E"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/force_cl"
+        app:layout_constraintEnd_toStartOf="@+id/force_cl"
+        app:layout_constraintHorizontal_bias="0.796"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView

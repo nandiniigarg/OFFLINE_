@@ -21,7 +21,7 @@
         android:id="@+id/calculate2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="52dp"
         android:onClick="calcEE"
         android:text="Calculate"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,16 +32,16 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="4dp"
         android:layout_marginRight="4dp"
         android:text="Distance"
         android:textColor="#E3526E"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/distance_ee"
-        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintHorizontal_bias="0.78"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <EditText
         android:id="@+id/distance_ee"
@@ -110,17 +110,46 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/textView12"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <EditText
+        android:id="@+id/charge_ee2"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:autoText="false"
+        android:background="#E3526E"
+        android:ems="10"
+        android:freezesText="false"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView17"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="Charge"
+        android:layout_marginTop="56dp"
+        android:text="First Charge"
         android:textColor="#E3526E"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@+id/charge_ee"
-        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintHorizontal_bias="0.703"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="32dp"
+        android:text="Second Charge"
+        android:textColor="#E3526E"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

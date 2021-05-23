@@ -1,11 +1,13 @@
 package com.deskmate;
 
+import java.text.DecimalFormat;
+
 public class DeskmateRes {
 
     static double speedOfLight = 3*Math.pow(10,8); //(m/s)
     static double plancksCnst = 6.63*Math.pow(10,-34); //
     static double coulumbsCnst = 9*Math.pow(10,9); //  N m2/C2
-
+    private static DecimalFormat df = new DecimalFormat("0.00");
     public void onPointerCaptureChanged(boolean hasCapture) {
 
     }
@@ -33,7 +35,8 @@ public class DeskmateRes {
         String final_res = "";
         int indexOfE = res.indexOf("E");
         String power = superscript(res.substring(indexOfE+1, res.length()));
-        final_res = res.substring(0, indexOfE);
+        double x = Double.parseDouble(res.substring(0, indexOfE));
+        final_res += String.valueOf(df.format(x));
         final_res += " x 10";
         final_res += power;
 

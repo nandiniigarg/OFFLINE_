@@ -22,11 +22,15 @@ public class Coulumbs_ES extends AppCompatActivity {
         entry3 = (EditText) findViewById(R.id.dist);
         result = (TextView) findViewById(R.id.result_ef);
     }
-
-    public void Coulumbs_es(View view){
+    private double calcFunc(double q1, double q2, double f){
 
         double q1 = Double.parseDouble(entry1.getText().toString());
         double q2 = Double.parseDouble(entry2.getText().toString());
+
+    }
+    public void Coulumbs_es(View view){
+
+
         double r = Double.parseDouble(entry3.getText().toString());
         result.setText(String.valueOf(com.deskmate.DeskmateRes.expConverter(Double.toString(k * q1 * q2 / (r * r)))));
 
