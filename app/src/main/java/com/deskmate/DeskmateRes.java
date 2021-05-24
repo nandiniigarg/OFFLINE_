@@ -8,6 +8,8 @@ public class DeskmateRes {
     static double plancksCnst = 6.63*Math.pow(10,-34); //
     static double coulumbsCnst = 9*Math.pow(10,9); //  N m2/C2
     private static DecimalFormat df = new DecimalFormat("0.00");
+
+
     public void onPointerCaptureChanged(boolean hasCapture) {
 
     }

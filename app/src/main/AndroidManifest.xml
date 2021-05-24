@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Deskmate">
         <activity android:name=".ElectroSEnergy_ES">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".Coulumbs_ES" />
+        <activity android:name=".Coulumbs_ES" ><intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter></activity>
         <activity android:name=".RegisterPage" />
         <activity android:name=".HomePage" />
         <activity android:name=".LoginPage" />
