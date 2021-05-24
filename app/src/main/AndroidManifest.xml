@@ -9,10 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Deskmate">
-        <activity android:name=".ElectroSEnergy_ES">
+        <activity android:name=".dipolePotential"></activity>
 
+
+        <activity android:name=".Potential_ES">
         </activity>
-        <activity android:name=".Coulumbs_ES" ><intent-filter>
+        <activity android:name=".ElectroSEnergy_ES" />
+        <activity android:name=".Coulumbs_ES"><intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
@@ -20,9 +23,7 @@
         <activity android:name=".RegisterPage" />
         <activity android:name=".HomePage" />
         <activity android:name=".LoginPage" />
-        <activity android:name=".ElectricField">
-
-        </activity>
+        <activity android:name=".ElectricField" />
 
         <meta-data
             android:name="preloaded_fonts"

@@ -55,7 +55,7 @@ public class DeskmateRes {
 //        }
 //        for (double i = a+dx; i<b ; i+=dx){
 //            double distA = i - a;
-//            area+=(dx/2)*(fx.hashCode(a+distA) + fx.f(a+distA-dx));
+//            area+=(dx/2)*(fx.f(a+distA) + fx.f(a+distA-dx)); //f takes double input
 //        }
 //        return area;
 //    }

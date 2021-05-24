@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.DecimalFormat;
 
-import static com.deskmate.DeskmateRes.coulumbsCnst;
+import static com.deskmate.DeskmateRes.*;
 import static com.deskmate.DeskmateRes.expConverter;
 
 public class Coulumbs_ES extends AppCompatActivity {
