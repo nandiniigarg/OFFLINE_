@@ -1,14 +1,13 @@
 package com.deskmate;
 
 import java.text.DecimalFormat;
-
 public class DeskmateRes {
 
     static double speedOfLight = 3*Math.pow(10,8); //(m/s)
     static double plancksCnst = 6.63*Math.pow(10,-34); //
     static double coulumbsCnst = 9*Math.pow(10,9); //  N m2/C2
     private static DecimalFormat df = new DecimalFormat("0.00");
-
+    public static final double dx = 1E-4;
 
     public void onPointerCaptureChanged(boolean hasCapture) {
 
@@ -45,5 +44,19 @@ public class DeskmateRes {
         return final_res;
 
     }
-
+//    public static double integral(double a, double b, Function fx){
+//        double area = 0;
+//        //double mod = 1;
+//        if (a>b){
+//            double tempA = a;
+//            a = b;
+//            b = tempA;
+//            //mod = -1;
+//        }
+//        for (double i = a+dx; i<b ; i+=dx){
+//            double distA = i - a;
+//            area+=(dx/2)*(fx.hashCode(a+distA) + fx.f(a+distA-dx));
+//        }
+//        return area;
+//    }
 }
