@@ -127,6 +127,7 @@
         android:layout_height="120dp"
         android:layout_marginTop="56dp"
         android:background="#00FFFFFF"
+        android:onClick="homeBTN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"

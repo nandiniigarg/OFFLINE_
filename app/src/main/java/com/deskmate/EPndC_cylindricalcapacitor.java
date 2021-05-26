@@ -1,5 +1,6 @@
 package com.deskmate;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -30,5 +31,11 @@ public class EPndC_cylindricalcapacitor extends AppCompatActivity {
         double l = Double.parseDouble(eth.getText().toString());
         double ccap = (2*(22/7)*8.854*Math.pow(10,-12)*l)/(Math.log(r2/r1));
         tvResult5.setText(String.valueOf(ccap)); 
+    }
+    public void homeBTN(View view){
+
+        Intent intent = new Intent(EPndC_cylindricalcapacitor.this, HomePage.class);
+        startActivity(intent);
+
     }
 }
