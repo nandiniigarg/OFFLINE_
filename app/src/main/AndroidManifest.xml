@@ -26,6 +26,8 @@
         <activity android:name=".dipolePotential" />
         <activity android:name=".LoginPage" />
         <activity android:name=".ElectricField" />
+        <activity android:name=".EPndC_energystoredincapacitor" />
+        <activity android:name=".EPndC_cylindricalcapacitor" />
 
         <meta-data
             android:name="preloaded_fonts"
