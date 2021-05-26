@@ -50,7 +50,7 @@ public class dipolePotential extends AppCompatActivity {
             double theta = Math.toRadians(Double.parseDouble(entry1.getText().toString()));
             double dist = Double.parseDouble(entry3.getText().toString());
             double pote = Double.parseDouble(entry4.getText().toString());
-            res += df.format(Math.acos(pote*dist*dist/ (coulumbsCnst*Math.cos(theta))))+" Deg";
+            res += df.format(Math.acos(pote*dist*dist/ (coulumbsCnst*Math.cos(theta))))+" C-m";
             if (res.contains("E")){
                 result.setText(expConverter(res));
             } else{
@@ -70,7 +70,7 @@ public class dipolePotential extends AppCompatActivity {
             double theta = Math.toRadians(Double.parseDouble(entry1.getText().toString()));
             double dip = Double.parseDouble(entry2.getText().toString());
             double r = Double.parseDouble(entry2.getText().toString());
-            res += df.format(coulumbsCnst*dip*Math.cos(theta)/r*r)+" m";
+            res += df.format(coulumbsCnst*dip*Math.cos(theta)/r*r)+" D";
             if (res.contains("E")){
                 result.setText(expConverter(res));
             } else result.setText(res);
@@ -83,5 +83,10 @@ public class dipolePotential extends AppCompatActivity {
             finish();
             startActivity(intent);
         }
+
+
+    } public void homeIntent(View view){
+        Intent intent = new Intent(dipolePotential.this, HomePage.class);
+        startActivity(intent);
     }
 }

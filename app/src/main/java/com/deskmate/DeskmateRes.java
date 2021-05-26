@@ -1,12 +1,11 @@
 package com.deskmate;
-
 import java.text.DecimalFormat;
 public class DeskmateRes {
 
     static double speedOfLight = 3*Math.pow(10,8); //(m/s)
     static double plancksCnst = 6.63*Math.pow(10,-34); //
     static double coulumbsCnst = 9*Math.pow(10,9); //  N m2/C2
-    private static DecimalFormat df = new DecimalFormat("0.00");
+    private static final DecimalFormat df = new DecimalFormat("0.00");
     public static final double dx = 1E-4;
 
     public void onPointerCaptureChanged(boolean hasCapture) {
@@ -35,28 +34,21 @@ public class DeskmateRes {
 
         String final_res = "";
         int indexOfE = res.indexOf("E");
-        String power = superscript(res.substring(indexOfE+1, res.length()));
+        String power = superscript(res.substring(indexOfE+1));
         double x = Double.parseDouble(res.substring(0, indexOfE));
-        final_res += String.valueOf(df.format(x));
+        final_res += df.format(x);
         final_res += " x 10";
         final_res += power;
 
         return final_res;
 
     }
-//    public static double integral(double a, double b, Function fx){
-//        double area = 0;
-//        //double mod = 1;
-//        if (a>b){
-//            double tempA = a;
-//            a = b;
-//            b = tempA;
-//            //mod = -1;
-//        }
-//        for (double i = a+dx; i<b ; i+=dx){
-//            double distA = i - a;
-//            area+=(dx/2)*(fx.f(a+distA) + fx.f(a+distA-dx)); //f takes double input
-//        }
-//        return area;
+//    public static double integral(double a, double b, UnivariateFunction fx){
+//        double getRelativeAccuracy();
+//
+//        double getAbsoluteAccuracy();
+//        int getMinimalIterationCount();
+//        int getMaximalIterationCount();
+//        double integrate(int maxEval, value(fx), double min, double max);
 //    }
 }

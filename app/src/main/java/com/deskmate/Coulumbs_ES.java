@@ -1,10 +1,13 @@
 package com.deskmate;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,7 +22,7 @@ public class Coulumbs_ES extends AppCompatActivity {
     private EditText entry3;
     private EditText entry4;
     private TextView result;
-    private static DecimalFormat df = new DecimalFormat("0.00");
+    private static final DecimalFormat df = new DecimalFormat("0.00");
 
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
@@ -33,13 +36,13 @@ public class Coulumbs_ES extends AppCompatActivity {
     }
     @SuppressLint("SetTextI18n")
     private void calcFunc(){
-
+        Context context = getApplicationContext();
         if (entry3.getText().toString().equals("*")) {
             double q1 = Double.parseDouble(entry1.getText().toString());
             double q2 = Double.parseDouble(entry2.getText().toString());
             double f = Double.parseDouble(entry4.getText().toString());
 
-            String res = String.valueOf(Double.toString(Double.parseDouble(df.format(Math.sqrt(coulumbsCnst * q1 * q2 / f)))))+" m";
+            String res = Double.parseDouble(df.format(Math.sqrt(coulumbsCnst * q1 * q2 / f))) +" m";
             if (res.contains("E")){
                 result.setText(expConverter(res));
             } else{
@@ -51,7 +54,7 @@ public class Coulumbs_ES extends AppCompatActivity {
             double q1 = Double.parseDouble(entry2.getText().toString());
             double r = Double.parseDouble(entry3.getText().toString());
             double f = Double.parseDouble(entry4.getText().toString());
-            String res = String.valueOf(Double.toString(Double.parseDouble(df.format(f* (r * r)/(coulumbsCnst *q1)))))+" C";
+            String res = Double.parseDouble(df.format(f * (r * r) / (coulumbsCnst * q1))) +" C";
             if (res.contains("E")){
                 result.setText(expConverter(res));
             } else{
@@ -63,7 +66,7 @@ public class Coulumbs_ES extends AppCompatActivity {
             double q2 = Double.parseDouble(entry1.getText().toString());
             double r = Double.parseDouble(entry3.getText().toString());
             double f = Double.parseDouble(entry4.getText().toString());
-            String res = String.valueOf(Double.toString(Double.parseDouble(df.format(f* (r * r)/(coulumbsCnst *q2)))))+" C";
+            String res = Double.parseDouble(df.format(f * (r * r) / (coulumbsCnst * q2))) +" C";
             if (res.contains("E")){
                 result.setText(expConverter(res));
             } else{
@@ -75,7 +78,7 @@ public class Coulumbs_ES extends AppCompatActivity {
             double q1 = Double.parseDouble(entry1.getText().toString());
             double q2 = Double.parseDouble(entry2.getText().toString());
             double r = Double.parseDouble(entry3.getText().toString());
-            String res = String.valueOf(Double.toString(Double.parseDouble(df.format(Math.sqrt((coulumbsCnst * q1 * q2 / (r*r)))))))+" N";
+            String res = Double.parseDouble(df.format(Math.sqrt((coulumbsCnst * q1 * q2 / (r * r))))) +" N";
             if (res.contains("E")){
                 result.setText(expConverter(res));
             } else{
@@ -84,6 +87,14 @@ public class Coulumbs_ES extends AppCompatActivity {
 
             System.out.print(res);
 
+        } else {
+            Toast.makeText(context,
+                    "Invalid Input! One of the entries have to be *",
+                    Toast.LENGTH_LONG)
+                    .show();
+            Intent intent = getIntent();
+            finish();
+            startActivity(intent);
         }
         //result.setText(String.valueOf(expConverter(Double.toString(9*Math.pow(10,9) * q1 * q2 / (r*r)))+" N"));
     }
