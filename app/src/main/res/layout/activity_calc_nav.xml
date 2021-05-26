@@ -74,6 +74,20 @@
         tools:text="SHM" />
 
     <Button
+        android:id="@+id/button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:onClick="CPNav_btn"
+        android:textColor="@color/black"
+        app:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        tools:text="Capacitance" />
+
+    <Button
         android:id="@+id/button3"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
