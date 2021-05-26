@@ -9,19 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Deskmate">
-        <activity android:name=".dipolePotential"></activity>
-
-
-        <activity android:name=".Potential_ES">
-        </activity>
+        <activity android:name=".ESNav"></activity>
+        <activity android:name=".StudyHome" />
+        <activity android:name=".CalcNav" />
+        <activity android:name=".Potential_ES" />
         <activity android:name=".ElectroSEnergy_ES" />
-        <activity android:name=".Coulumbs_ES"><intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter></activity>
+        <activity android:name=".Coulumbs_ES" />
         <activity android:name=".RegisterPage" />
-        <activity android:name=".HomePage" />
+        <activity android:name=".HomePage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".dipolePotential" />
         <activity android:name=".LoginPage" />
         <activity android:name=".ElectricField" />
 
