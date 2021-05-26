@@ -28,7 +28,7 @@
         <activity android:name=".ElectricField" />
         <activity android:name=".EPndC_energystoredincapacitor" />
         <activity android:name=".EPndC_cylindricalcapacitor" />
-
+        <activity android:name=".Force_eq" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
