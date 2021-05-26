@@ -8,27 +8,27 @@
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="124dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="64dp"
-        android:text="Cylindrical Capacitors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Cylindrical Capacitors Capacitance"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="44dp"
         android:text="Inner Radius"
         android:textColor="#e3526e"
         android:textSize="22sp"
         app:layout_constraintEnd_toStartOf="@+id/etir1"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -41,7 +41,7 @@
         android:textColor="#e3526e"
         android:textSize="22sp"
         app:layout_constraintEnd_toStartOf="@+id/etor1"
-        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -49,17 +49,21 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="48dp"
         android:onClick="CCapacitor"
         android:text="CALCULATE"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/eth" />
 
     <EditText
         android:id="@+id/etir1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:background="#e3526e"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView15"
@@ -67,8 +71,11 @@
 
     <EditText
         android:id="@+id/etor1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:background="#e3526e"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView16"
@@ -79,35 +86,50 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="RESULT"
-        android:textColor="#FFC107"
-        android:textSize="22sp"
-        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4"
-        app:layout_constraintVertical_bias="0.069" />
+        app:layout_constraintVertical_bias="0.185" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
         android:text="Height"
         android:textColor="#e3526e"
         android:textSize="22sp"
         app:layout_constraintEnd_toStartOf="@+id/eth"
-        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <EditText
         android:id="@+id/eth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:background="#e3526e"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView18"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="56dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
