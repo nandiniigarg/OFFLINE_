@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/button7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EPndC_Capacitance">
+
+    <EditText
+        android:id="@+id/etV1"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#e3526e"
+        android:ems="10"
+        android:hint="V"
+        android:inputType="textPersonName"
+        android:textColorHint="#0C0B0B"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView28"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="32dp"
+        android:background="#00FFFFFF"
+        android:onClick="homeBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Capacitance"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Charge(Q)"
+        android:textColor="#e3526e"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/etq1"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="245dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Potential Difference(V)"
+        android:textColor="#e3526e"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/etV1"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <EditText
+        android:id="@+id/etq1"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#e3526e"
+        android:ems="10"
+        android:hint="Q"
+        android:inputType="textPersonName"
+        android:textColorHint="#080808"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView27"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="145dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="72dp"
+        android:onClick="Capacitance"
+        android:text="CALCULATE"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/tvResult8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="136dp"
+        android:text="RESULT"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        app:layout_constraintVertical_bias="0.111" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,4 +30,8 @@ public class EPndC_sphericalcapacitor extends AppCompatActivity {
 //        double scap = (4*(22/7)*8.854*Math.pow(10,-12)*r1*r2)/(r2-r1);
 //        tvResult4.setText(String.valueOf(scap));
     }
-}
+//    public void homeBTN(View view){
+//                Intent intent = new Intent(EPndC_sphericalcapacitor.this, HomePage.class);
+//                startActivity(intent);
+//                }
+                }

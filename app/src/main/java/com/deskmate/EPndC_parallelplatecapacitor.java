@@ -29,8 +29,9 @@ public class EPndC_parallelplatecapacitor extends AppCompatActivity {
 
         
     }
-//        public void homeBTN(View view){
-//        Intent intent = new Intent(EPndC_energystoredincapacitor.this, HomePage.class);
-//        startActivity(intent);
-//    }
+
+//            public void homeBTN(View view){
+//                Intent intent = new Intent(EPndC_parallelplatecapacitor.this, HomePage.class);
+//                startActivity(intent);
+//                }
 }
