@@ -32,6 +32,23 @@
         <activity android:name=".EPndC_parallelplatecapacitor" />
         <activity android:name=".EPndC_sphericalcapacitor" />
         <activity android:name=".EPndC_Capacitance" />
+        <activity android:name=".AC_RMSAvg" />
+        <activity android:name=".LOMEacc" />
+        <activity android:name=".LOMEq3" />
+        <activity android:name=".LOMEq2" />
+        <activity android:name=".LOMEq1" />
+        <activity android:name=".LinearMomentum" />
+        <activity android:name=".Impulse" />
+        <activity android:name=".CentripetalForce" />
+        <activity android:name=".StaticFriction" />
+        <activity android:name=".KineticFriction" />
+        <activity android:name=".MOS_Stress" />
+        <activity android:name=".MOS_LongitudinalStrain" />
+        <activity android:name=".MOS_HookesLaw" />
+        <activity android:name=".MOS_YoungsModulus" />
+        <activity android:name=".MOS_ShearModulus" />
+        <activity android:name=".AC_RMSVoltage" />
+        <activity android:name=".AC_RMSPeaktoPeak" />
         <activity android:name=".Force_eq" />
         <meta-data
             android:name="preloaded_fonts"
