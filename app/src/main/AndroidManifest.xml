@@ -48,7 +48,7 @@
         <activity android:name=".MOS_YoungsModulus" />
         <activity android:name=".MOS_ShearModulus" />
         <activity android:name=".AC_RMSVoltage" />
-        <activity android:name=".AC_RMSPeaktoPeak">
+        <activity android:name=".AC_RMSPeaktoPeak" />
         <activity android:name=".Force_eq" />
         <meta-data
             android:name="preloaded_fonts"
