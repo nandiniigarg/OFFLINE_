@@ -2,10 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/button7"
+    android:id="@+id/imageButton8"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EPndC_Capacitance">
+    tools:context=".EPndC_Capacitance"
+    tools:ignore="DuplicateIds">
 
     <EditText
         android:id="@+id/etV1"

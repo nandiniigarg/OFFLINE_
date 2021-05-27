@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class ElectricField extends AppCompatActivity {
     private EditText chrg;
     private EditText dista;
+    private EditText efo;
     private TextView res;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,15 +21,11 @@ public class ElectricField extends AppCompatActivity {
         setContentView(R.layout.activity_electric_field);
         chrg = (EditText) findViewById(R.id.charge);
         dista = (EditText) findViewById(R.id.distance);
+        efo = (EditText) findViewById(R.id.distance2);
         res = (TextView) findViewById(R.id.result_ef);
-    }
-    public void calc_EF(View view){
 
+    }public void calc_EF (View view){
+        res.setText(ElectroStatics.ElectricField(chrg.getText().toString(), dista.getText().toString(), efo.getText().toString()));
 
-        double q = Double.parseDouble(chrg.getText().toString());
-        double d = Double.parseDouble(dista.getText().toString());
-        String result = com.deskmate.DeskmateRes.expConverter(Double.toString(DeskmateRes.coulumbsCnst * q / (d * d)));
-
-        res.setText(result + "N/C");
     }
 }

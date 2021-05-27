@@ -1,4 +1,5 @@
 package com.deskmate;
+
 import java.text.DecimalFormat;
 public class DeskmateRes {
 
@@ -50,5 +51,23 @@ public class DeskmateRes {
 //        int getMinimalIterationCount();
 //        int getMaximalIterationCount();
 //        double integrate(int maxEval, value(fx), double min, double max);
+//    }
+//    public static double integral(double a, double b, Function fx){
+//        double area = 0;
+//        //double mod = 1;
+//        if (a>b){
+//            double tempA = a;
+//            a = b;
+//            b = tempA;
+//            //mod = -1;
+//        }
+//        for (double i = a+dx; i<b ; i+=dx){
+//
+//            double distA = i - a;
+//            double f = a+distA-dx;
+//            double f2 = a+distA;
+//            area+=(dx/2)*(fx.apply(f2) + fx.apply(f); //f takes double input
+//        }
+//        return area;
 //    }
 }
