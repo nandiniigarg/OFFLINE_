@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Deskmate">
-        <activity android:name=".Ohms_law"></activity>
+        <activity android:name=".CENav"></activity>
+        <activity android:name=".LOM_Nav" />
+        <activity android:name=".Ohms_law" />
         <activity android:name=".CE_Ohms_law" />
         <activity android:name=".CPNav" />
         <activity android:name=".ESNav" />
