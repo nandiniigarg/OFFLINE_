@@ -1,5 +1,6 @@
 package com.deskmate;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -25,7 +26,9 @@ public class AC_RMSPeaktoPeak extends AppCompatActivity {
         rmsVpp = (EditText) findViewById(R.id.rmsVpp);
         sumvpp = (TextView) findViewById(R.id.sumvpp);
     }
-    private void calcFunction() {
+
+
+    public void btnrmsvpp(View view) {
         if (rmspp.getText().toString().equals("*")) {
             double v = Double.parseDouble(rmsVpp.getText().toString());
             String res = String.valueOf(Double.toString(Double.parseDouble(df.format(v / (2 * Math.sqrt(2))))));
@@ -43,9 +46,10 @@ public class AC_RMSPeaktoPeak extends AppCompatActivity {
                 sumvpp.setText(res);
             }
         }
-    }
 
-    public void btnrmsvpp(View view) {
-        calcFunction();
+    }
+    public void home_BTN(View view){
+        Intent intent = new Intent(AC_RMSPeaktoPeak.this, HomePage.class);
+        startActivity(intent);
     }
 }
