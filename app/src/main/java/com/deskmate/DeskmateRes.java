@@ -2,11 +2,11 @@ package com.deskmate;
 
 import java.text.DecimalFormat;
 public class DeskmateRes {
-
+    public static final DecimalFormat df = new DecimalFormat("0.00");
     static double speedOfLight = 3*Math.pow(10,8); //(m/s)
     static double plancksCnst = 6.63*Math.pow(10,-34); //
     static double coulumbsCnst = 9*Math.pow(10,9); //  N m2/C2
-    private static final DecimalFormat df = new DecimalFormat("0.00");
+
     public static final double dx = 1E-4;
 
     public void onPointerCaptureChanged(boolean hasCapture) {

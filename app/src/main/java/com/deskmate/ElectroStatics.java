@@ -1,10 +1,11 @@
 package com.deskmate;
 
-import static com.deskmate.Coulumbs_ES.df;
 import static com.deskmate.DeskmateRes.coulumbsCnst;
+import static com.deskmate.DeskmateRes.df;
 import static com.deskmate.DeskmateRes.expConverter;
 
 public class ElectroStatics {
+
     public static String CoulumbsLaw(String q1, String q2, String r, String f){
         double Q1 = Double.parseDouble(q1);
         double Q2 = Double.parseDouble(q2);
@@ -25,6 +26,7 @@ public class ElectroStatics {
                return (res);
             }
         } else if (q2.equals("*")){
+
         String res = Double.parseDouble(df.format(F * (R * R) / (coulumbsCnst * Q2))) +" C";
             if (res.contains("E")){
                 return (expConverter(res));

@@ -19,7 +19,7 @@ public class Coulumbs_ES extends AppCompatActivity {
     private EditText entry3;
     private EditText entry4;
     private TextView result;
-    public static final DecimalFormat df = new DecimalFormat("0.00");
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
@@ -33,6 +33,10 @@ public class Coulumbs_ES extends AppCompatActivity {
     }
     @SuppressLint("SetTextI18n")
     private void calcFunc() {
+
+    }
+
+    public void Coulumbs_es(View view){
         Context context = getApplicationContext();
         String final_res = ElectroStatics.CoulumbsLaw(entry1.getText().toString(), entry2.getText().toString(),
                 entry3.getText().toString(), entry4.getText().toString());
@@ -48,11 +52,6 @@ public class Coulumbs_ES extends AppCompatActivity {
         } else{
             result.setText(final_res);
         }
-    }
-
-    public void Coulumbs_es(View view){
-
-        calcFunc();
 
 
     }
