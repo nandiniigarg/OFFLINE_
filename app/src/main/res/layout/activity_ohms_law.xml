@@ -96,7 +96,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/edtN"
+        android:id="@+id/edtN3"
         android:layout_width="96dp"
         android:layout_height="45dp"
         android:background="#e3526e"
