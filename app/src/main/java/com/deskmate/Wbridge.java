@@ -10,24 +10,25 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Ohms_law extends AppCompatActivity {
+public class Wbridge extends AppCompatActivity {
 
-    private EditText edtN1, edtN2, edtN3;
+    private EditText edtN1, edtN2, edtN3,edtN4;
     private TextView tvResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_ohms_law);
-        edtN1 = (EditText) findViewById(R.id.V1);
-        edtN2 = (EditText) findViewById(R.id.edtN2);
-        edtN3 = (EditText) findViewById(R.id.edtN3);
-        tvResult = (TextView) findViewById(R.id.tvResult);
+        setContentView(R.layout.activity_wbridge);
+        edtN1 = (EditText) findViewById(R.id.R1);
+        edtN2 = (EditText) findViewById(R.id.R2);
+        edtN3 = (EditText) findViewById(R.id.R3);
+        edtN4 = (EditText) findViewById(R.id.R4);
 
     }
 
     public void btnCalc(View view) {
-        String res = Current_Electricity.OhmsLaw(edtN3.getText().toString() , edtN1.getText().toString(), edtN2.getText().toString() );
+
+        String res = Current_Electricity.Wbridge(edtN1.getText().toString() , edtN2.getText().toString(), edtN3.getText().toString(),edtN4.getText().toString() );
         Context context = getApplicationContext();
         if (res.equals("ERROR")){
             Toast.makeText(context,
@@ -41,10 +42,11 @@ public class Ohms_law extends AppCompatActivity {
         } else{
             tvResult.setText(res);
         }
+
     }
 
-    public void homeBTN(View view){
-        Intent intent = new Intent(Ohms_law.this, HomePage.class);
+    public void homeBTN(View view) {
+        Intent intent = new Intent(Wbridge.this, HomePage.class);
         startActivity(intent);
     }
 }
