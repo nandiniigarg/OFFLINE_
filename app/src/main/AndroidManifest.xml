@@ -9,12 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Deskmate">
-        <activity android:name=".Wbridge"></activity>
-        <activity android:name=".CENav" />
-        <activity android:name=".LOM_Nav" />
-        <activity android:name=".Ohms_law" />
-        <activity android:name=".CE_Ohms_law" />
-        <activity android:name=".CPNav" />
+        <activity android:name=".CPNav"></activity>
         <activity android:name=".ESNav" />
         <activity android:name=".StudyHome" />
         <activity android:name=".CalcNav" />
@@ -55,7 +50,6 @@
         <activity android:name=".AC_RMSVoltage" />
         <activity android:name=".AC_RMSPeaktoPeak" />
         <activity android:name=".Force_eq" />
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
