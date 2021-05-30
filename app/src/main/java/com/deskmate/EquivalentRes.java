@@ -43,7 +43,7 @@ public class EquivalentRes extends AppCompatActivity {
         series.setText(Float.toString(Float.parseFloat(df.format(sum))) +" Ohms");
     }
     public void Home_Btn(View view){
-        Intent intent = new Intent(EquivalentRes.this, EPndC_cylindricalcapacitor.class);
+        Intent intent = new Intent(EquivalentRes.this, HomePage.class);
         startActivity(intent);
     }
 }

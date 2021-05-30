@@ -17,4 +17,12 @@ public class ACNav extends AppCompatActivity {
         Intent intent = new Intent(ACNav.this, Ohms_law.class);
         startActivity(intent);
     }
+    public void ACRes_btn(View view){
+        Intent intent = new Intent(ACNav.this, AC_Reactance.class);
+        startActivity(intent);
+    }
+    public void homeBtn(View view){
+        Intent intent = new Intent(ACNav.this, HomePage.class);
+        startActivity(intent);
+    }
 }
