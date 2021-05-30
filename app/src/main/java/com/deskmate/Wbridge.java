@@ -23,8 +23,9 @@ public class Wbridge extends AppCompatActivity {
         edtN2 = (EditText) findViewById(R.id.R2);
         edtN3 = (EditText) findViewById(R.id.R3);
         edtN4 = (EditText) findViewById(R.id.R4);
-
+        tvResult =  (TextView) findViewById(R.id.TvResult);
     }
+
 
     public void btnCalc(View view) {
 
