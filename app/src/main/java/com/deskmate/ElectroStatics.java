@@ -4,7 +4,9 @@ import static com.deskmate.DeskmateRes.coulumbsCnst;
 import static com.deskmate.DeskmateRes.df;
 import static com.deskmate.DeskmateRes.expConverter;
 
-public class ElectroStatics {
+
+public class ElectroStatics{
+
 
     public static String CoulumbsLaw(String q1, String q2, String r, String f){
         double Q1 = Double.parseDouble(q1);
@@ -23,11 +25,11 @@ public class ElectroStatics {
             if (res.contains("E")){
                 return (expConverter(res));
             } else{
-               return (res);
+                return (res);
             }
         } else if (q2.equals("*")){
 
-        String res = Double.parseDouble(df.format(F * (R * R) / (coulumbsCnst * Q2))) +" C";
+            String res = Double.parseDouble(df.format(F * (R * R) / (coulumbsCnst * Q2))) +" C";
             if (res.contains("E")){
                 return (expConverter(res));
             } else{
@@ -76,6 +78,7 @@ public class ElectroStatics {
             return "ERROR";
         }
     }
+
     public static String PotentialES (String charge, String dist, String PotES) {
         double r = Double.parseDouble(dist);
         double v = Double.parseDouble(PotES);
@@ -181,4 +184,5 @@ public class ElectroStatics {
             return "ERROR";
         }
     }
+
 }
