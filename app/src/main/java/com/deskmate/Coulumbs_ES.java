@@ -1,6 +1,5 @@
 package com.deskmate;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -29,8 +28,6 @@ public class Coulumbs_ES extends AppCompatActivity {
         entry4 = (EditText) findViewById(R.id.force_cl);
         result = (TextView) findViewById(R.id.result_ef);
     }
-    @SuppressLint("SetTextI18n")
-
     public void Coulumbs_es(View view){
         Context context = getApplicationContext();
         String final_res = ElectroStatics.CoulumbsLaw(entry1.getText().toString(), entry2.getText().toString(),
