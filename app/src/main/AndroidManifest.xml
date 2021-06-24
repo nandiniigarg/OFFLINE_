@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Deskmate">
-        <activity android:name=".ACNav"></activity>
-        <activity android:name=".CENav" />
-        <activity android:name=".LOM_Nav" />
-        <activity android:name=".Ohms_law" />
+        <activity
+            android:name=".GalvAsAmmeter"
+            android:label="@string/title_activity_galv_as_ammeter"
+            android:theme="@style/Theme.Deskmate.NoActionBar"></activity>
+        <activity android:name=".MagneticsNav" />
+        <activity android:name=".MFieldCurrent" />
         <activity android:name=".CPNav" />
         <activity android:name=".ESNav" />
         <activity android:name=".StudyHome" />

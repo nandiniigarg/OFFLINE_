@@ -20,6 +20,21 @@
         app:layout_constraintTop_toBottomOf="@+id/textView97"
         tools:text="Ohm's Law" />
 
+    <Button
+        android:id="@+id/esNav_btn8"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="EquivalentRes_btn"
+        android:text="Equivalent Resistance"
+        android:textColor="@color/black"
+        app:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/esNav_btn7"
+        tools:text="Equivalent Resistance" />
+
     <TextView
         android:id="@+id/textView97"
         android:layout_width="wrap_content"

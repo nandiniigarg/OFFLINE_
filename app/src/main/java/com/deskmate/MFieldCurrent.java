@@ -10,29 +10,32 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Coulumbs_ES extends AppCompatActivity {
+public class MFieldCurrent extends AppCompatActivity {
     private EditText entry1;
     private EditText entry2;
     private EditText entry3;
     private EditText entry4;
+    private EditText entry5;
     private TextView result;
-
-
     @Override
-    protected void onCreate(Bundle savedInstanceState)  {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_coulumbs__e_s);
-        entry1 = (EditText) findViewById(R.id.charge1);
-        entry2 = (EditText) findViewById(R.id.charge2);
-        entry3 = (EditText) findViewById(R.id.dist);
-        entry4 = (EditText) findViewById(R.id.force_cl);
-        result = (TextView) findViewById(R.id.result_ef);
+        setContentView(R.layout.activity_mfield_current);
+        entry1 = (EditText) findViewById(R.id.CurrentMFC);
+        entry2 = (EditText) findViewById(R.id.DistMFC);
+        entry3 = (EditText) findViewById(R.id.Theta1MFC);
+        entry4 = (EditText) findViewById(R.id.Theta2MFC);
+        entry5 = (EditText) findViewById(R.id.MF_MFC);
+        result = (TextView) findViewById(R.id.result_MFC);
     }
-    public void Coulumbs_es(View view){
-        Context context = getApplicationContext();
-        String final_res = ElectroStatics.CoulumbsLaw(entry1.getText().toString(), entry2.getText().toString(),
-                entry3.getText().toString(), entry4.getText().toString());
+
+
+    public void MFieldCurrentBtn(View view){
+
+        String final_res = Magnetics.magneticFieldStCurrent(entry2.getText().toString(), entry1.getText().toString(),
+                entry3.getText().toString(), entry4.getText().toString(), entry5.getText().toString());
         if (final_res.equals("ERROR")){
+            Context context = getApplicationContext();
             Toast.makeText(context,
                     "Invalid Input! One of the entries have to be *",
                     Toast.LENGTH_LONG)
@@ -48,8 +51,7 @@ public class Coulumbs_ES extends AppCompatActivity {
 
     }
     public void homeIntent(View view){
-        Intent intent = new Intent(Coulumbs_ES.this, HomePage.class);
+        Intent intent = new Intent(MFieldCurrent.this, HomePage.class);
         startActivity(intent);
     }
-
 }

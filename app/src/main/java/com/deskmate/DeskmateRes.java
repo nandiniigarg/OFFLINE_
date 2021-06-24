@@ -6,6 +6,7 @@ public class DeskmateRes {
     static double speedOfLight = 3*Math.pow(10,8); //(m/s)
     static double plancksCnst = 6.63*Math.pow(10,-34); //
     static double coulumbsCnst = 9*Math.pow(10,9); //  N m2/C2
+    static double nuByFourPi = 10E-4;
 
     public static final double dx = 1E-4;
 

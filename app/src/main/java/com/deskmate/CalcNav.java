@@ -29,4 +29,17 @@ public class CalcNav extends AppCompatActivity {
         Intent intent = new Intent(CalcNav.this, CENav.class);
         startActivity(intent);
     }
+    public void ACNav_btn(View view){
+        Intent intent = new Intent(CalcNav.this, ACNav.class);
+        startActivity(intent);
+    }
+    public void MagNav_btn(View view){
+        Intent intent = new Intent(CalcNav.this, MagneticsNav.class);
+        startActivity(intent);
+    }
+    public void LOMNav_btn(View view){
+        Intent intent = new Intent(CalcNav.this, LOM_Nav.class);
+        startActivity(intent);
+    }
+
 }

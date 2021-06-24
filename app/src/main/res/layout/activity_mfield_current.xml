@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MFieldCurrent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MFieldCurrent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/result_MFC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="RESULT"
+            android:textSize="30sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calculate3"
+            app:layout_constraintVertical_bias="0.097" />
+
+        <Button
+            android:id="@+id/calculate3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:onClick="MFieldCurrentBtn"
+            android:text="Calculate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView117" />
+
+        <EditText
+            android:id="@+id/MF_MFC"
+            android:layout_width="96dp"
+            android:layout_height="45dp"
+            android:autoText="false"
+            android:background="#E3526E"
+            android:ems="10"
+            android:freezesText="false"
+            android:inputType="text"
+            android:textSize="18sp"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView117"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.305"
+            app:layout_constraintStart_toEndOf="@+id/textView117" />
+
+        <EditText
+            android:id="@+id/Theta2MFC"
+            android:layout_width="96dp"
+            android:layout_height="45dp"
+            android:autoText="false"
+            android:background="#E3526E"
+            android:ems="10"
+            android:freezesText="false"
+            android:inputType="text"
+            android:textSize="18sp"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView116"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.298"
+            app:layout_constraintStart_toEndOf="@+id/textView116" />
+
+        <EditText
+            android:id="@+id/Theta1MFC"
+            android:layout_width="96dp"
+            android:layout_height="45dp"
+            android:autoText="false"
+            android:background="#E3526E"
+            android:ems="10"
+            android:freezesText="false"
+            android:inputType="text"
+            android:textSize="18sp"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView114"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.298"
+            app:layout_constraintStart_toEndOf="@+id/textView114" />
+
+        <EditText
+            android:id="@+id/DistMFC"
+            android:layout_width="96dp"
+            android:layout_height="45dp"
+            android:autoText="false"
+            android:background="#E3526E"
+            android:ems="10"
+            android:freezesText="false"
+            android:inputType="text"
+            android:textSize="18sp"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView115"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.287"
+            app:layout_constraintStart_toEndOf="@+id/textView115" />
+
+        <EditText
+            android:id="@+id/CurrentMFC"
+            android:layout_width="96dp"
+            android:layout_height="45dp"
+            android:autoText="false"
+            android:background="#E3526E"
+            android:ems="10"
+            android:freezesText="false"
+            android:inputType="text"
+            android:textSize="18sp"
+            app:flow_horizontalAlign="center"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView113"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.292"
+            app:layout_constraintStart_toEndOf="@+id/textView113" />
+
+        <TextView
+            android:id="@+id/textView117"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginLeft="76dp"
+            android:layout_marginTop="36dp"
+            android:text="Magnetic Field"
+            android:textColor="#E3526E"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView116" />
+
+        <TextView
+            android:id="@+id/textView115"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="92dp"
+            android:layout_marginLeft="92dp"
+            android:layout_marginTop="36dp"
+            android:text="Distance (m)"
+            android:textColor="#E3526E"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView113" />
+
+        <TextView
+            android:id="@+id/textView114"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginLeft="84dp"
+            android:layout_marginTop="36dp"
+            android:text="Theta 1 (Deg)"
+            android:textColor="#E3526E"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView115" />
+
+        <TextView
+            android:id="@+id/textView116"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginLeft="84dp"
+            android:layout_marginTop="36dp"
+            android:text="Theta 2 (Deg)"
+            android:textColor="#E3526E"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView114" />
+
+        <TextView
+            android:id="@+id/textView113"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginLeft="104dp"
+            android:layout_marginTop="20dp"
+            android:text="Current (A)"
+            android:textColor="#E3526E"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView111" />
+
+        <TextView
+            android:id="@+id/textView112"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="(Magnetic Field Due to Current)"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView110" />
+
+        <TextView
+            android:id="@+id/textView111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Enter * for the Value you want to find"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView112" />
+
+        <TextView
+            android:id="@+id/textView110"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="Magnetuc Field Due to Stright Current Carrier"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton26" />
+
+        <ImageButton
+            android:id="@+id/imageButton26"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="16dp"
+            android:background="#00FFFFFF"
+            android:onClick="homeIntent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

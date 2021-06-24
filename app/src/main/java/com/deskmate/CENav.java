@@ -17,4 +17,9 @@ public class CENav extends AppCompatActivity {
         Intent intent = new Intent(CENav.this, Ohms_law.class);
         startActivity(intent);
     }
+    public void EquivalentRes_btn(View view){
+        Intent intent = new Intent(CENav.this, EquivalentRes.class);
+        startActivity(intent);
+    }
+
 }
