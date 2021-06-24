@@ -41,5 +41,9 @@ public class CalcNav extends AppCompatActivity {
         Intent intent = new Intent(CalcNav.this, LOM_Nav.class);
         startActivity(intent);
     }
+    public void MFNav_btn(View view){
+        Intent intent = new Intent(CalcNav.this, MFNav.class);
+        startActivity(intent);
+    }
 
 }
