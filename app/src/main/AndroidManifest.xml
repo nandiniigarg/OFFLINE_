@@ -54,6 +54,12 @@
         <activity android:name=".AC_RMSVoltage" />
         <activity android:name=".AC_RMSPeaktoPeak" />
         <activity android:name=".Force_eq" />
+        <activity android:name=".MFduetoC_fieldaatCentreofRing" />
+        <activity android:name=".MFduetoC_fieldatCentreofArc" />
+        <activity android:name=".MFduetoC_fieldduetoinfstrtwire" />
+        <activity android:name=".MFduetoC_fieldinsideaToroid" />
+        <activity android:name=".MFduetoC_fieldonaxisofring" />
+
 
         <meta-data
             android:name="preloaded_fonts"

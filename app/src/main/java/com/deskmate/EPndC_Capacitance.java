@@ -1,5 +1,6 @@
 package com.deskmate;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -27,8 +28,8 @@ public class EPndC_Capacitance extends AppCompatActivity {
         double Result = q/V;
         tvResult8.setText(String.valueOf(Result)+"F");
     }
-    //        public void homeBTN(View view){
-//        Intent intent = new Intent(EPndC_Capacitance.this, HomePage.class);
-//        startActivity(intent);
-//    }
+            public void homeBTN(View view){
+        Intent intent = new Intent(EPndC_Capacitance.this, HomePage.class);
+        startActivity(intent);
+    }
 }
