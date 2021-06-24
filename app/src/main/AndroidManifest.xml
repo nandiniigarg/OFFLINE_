@@ -18,6 +18,7 @@
         <activity android:name=".CPNav" />
         <activity android:name=".ESNav" />
         <activity android:name=".MFNav" />
+        <activity android:name=".EPCNav" />
         <activity android:name=".StudyHome" />
         <activity android:name=".CalcNav" />
         <activity android:name=".Potential_ES" />
