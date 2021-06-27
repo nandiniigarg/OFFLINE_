@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EPCNav">
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="24dp"
+        android:background="#00FFFFFF"
+        android:onClick="homeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="DESKMATE"
+        android:textColor="#E91E63"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="We're here to Help!"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:onClick="EPCc"
+        android:text="Capacitance"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:onClick="EPCcylc"
+        android:text="Cylindrical Capacitor"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button18" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:onClick="EPCesc"
+        android:text="Energy Stored in Capacitor"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button19" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:onClick="EPCppc"
+        android:text="Parallel Plate Capacitor"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:backgroundTint="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button20" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:onClick="EPCsc"
+        android:text="Spherical Capacitor"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button21"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

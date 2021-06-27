@@ -25,7 +25,10 @@ public class ESNav extends AppCompatActivity {
         Intent intent = new Intent(ESNav.this, ElectroSEnergy_ES.class);
         startActivity(intent);
     }
-
+    public void dipPotential_btn(View view){
+        Intent intent = new Intent(ESNav.this, dipolePotential.class);
+        startActivity(intent);
+    }
     public void homeBtn(View view) {
         Intent intent = new Intent(ESNav.this, HomePage.class);
         startActivity(intent);

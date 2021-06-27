@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MFNav">
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:onClick="MFcor"
+        android:text="Field at Centre of Ring"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton10" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="MFcoa"
+        android:text="Field at Centre of Arc"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button13" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:onClick="MFisw"
+        android:text="Field due to Infinite Straight Wire"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button14" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="MFit"
+        android:text="Field Inside a Toroid"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button15" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:onClick="MFaor"
+        android:text="Field on Axis of a Ring"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button16"
+        app:layout_constraintVertical_bias="0.262" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:onClick="homeBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
+        android:text="DESKMATE"
+        android:textColor="#E91E63"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButton10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="(We're here to Help)"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView47" />
+</androidx.constraintlayout.widget.ConstraintLayout>

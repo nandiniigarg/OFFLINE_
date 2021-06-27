@@ -9,10 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Deskmate">
-        <activity android:name=".MagneticsNav"></activity>
+        <activity
+            android:name=".GalvAsAmmeter"
+            android:label="@string/title_activity_galv_as_ammeter"
+            android:theme="@style/Theme.Deskmate.NoActionBar" />
+        <activity android:name=".MagneticsNav" />
         <activity android:name=".MFieldCurrent" />
         <activity android:name=".CPNav" />
         <activity android:name=".ESNav" />
+        <activity android:name=".MFNav" />
+        <activity android:name=".EPCNav" />
         <activity android:name=".StudyHome" />
         <activity android:name=".CalcNav" />
         <activity android:name=".Potential_ES" />
@@ -52,6 +58,11 @@
         <activity android:name=".AC_RMSVoltage" />
         <activity android:name=".AC_RMSPeaktoPeak" />
         <activity android:name=".Force_eq" />
+        <activity android:name=".MFduetoC_fieldaatCentreofRing" />
+        <activity android:name=".MFduetoC_fieldatCentreofArc" />
+        <activity android:name=".MFduetoC_fieldduetoinfstrtwire" />
+        <activity android:name=".MFduetoC_fieldinsideaToroid" />
+        <activity android:name=".MFduetoC_fieldonaxisofring" />
 
         <meta-data
             android:name="preloaded_fonts"

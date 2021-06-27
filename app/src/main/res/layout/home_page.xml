@@ -77,10 +77,10 @@
         android:layout_marginEnd="72dp"
         android:layout_marginRight="72dp"
         android:fontFamily="@font/baloo_tamma"
-        android:text="Become a Member"
+        android:text="Playground"
         app:layout_constraintBaseline_toBaselineOf="@+id/textView39"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.734"
         app:layout_constraintStart_toEndOf="@+id/textView39" />
 
     <TextView

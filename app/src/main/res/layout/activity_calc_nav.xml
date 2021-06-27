@@ -81,6 +81,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:onClick="LOMNav_btn"
         android:text="SHM"
         android:textColor="@color/black"
         app:backgroundTint="#00FFFFFF"
@@ -145,5 +146,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/esNav_btn"
         tools:text="Laws of Motion" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:onClick="MFNav_btn"
+        android:text="MAGNETIC FIELD"
+        android:textColor="@color/black"
+        app:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10"
+        app:layout_constraintVertical_bias="0.137" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
