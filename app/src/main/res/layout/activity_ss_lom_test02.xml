@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SS_LOM_TEST02">
+
+    <TextView
+        android:id="@+id/textView161"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text=".A car is moving in a circular horizontal track of radius 10m with a constant speed of lOm/s. A plumb bob is suspended from the roof of the car by a light rigid rod. The angle made by the rod with the track is (g = 10 m/s2) "
+        android:textColor="#1B1717"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton31" />
+
+    <ImageButton
+        android:id="@+id/imageButton31"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <TextView
+        android:id="@+id/textView166"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="40dp"
+        android:text="ANSWER"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView161" />
+
+    <EditText
+        android:id="@+id/ansq2"
+        android:layout_width="96dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:background="#E3526E"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toEndOf="@+id/textView166"
+        app:layout_constraintTop_toBottomOf="@+id/textView161" />
+
+    <Button
+        android:id="@+id/buttonans2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:onClick="buttonans2"
+        android:text="SUBMIT"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ansq2" />
+
+    <TextView
+        android:id="@+id/ans2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="RESULT"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonans2" />
+
+    <Button
+        android:id="@+id/button30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="NEXT>"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ans2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
