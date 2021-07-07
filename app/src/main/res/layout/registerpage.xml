@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E3226E"
-    tools:context=".registerpage">
+    android:background="#E91E63"
+    tools:context=".RegisterPage">
 
     <TextView
         android:id="@+id/reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:background="#00FFFFFF"
         android:fontFamily="@font/baloo_tamma"
         android:text="Register Now!"
@@ -62,11 +62,11 @@
         android:id="@+id/schoolName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="Name of your School"
-        android:inputType="textPassword"
+        android:inputType="textPersonName"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,10 +75,26 @@
         app:layout_constraintTop_toBottomOf="@+id/emailID" />
 
     <EditText
+        android:id="@+id/occupation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Student/Teacher"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/schoolName" />
+
+    <EditText
         android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:gravity="center_horizontal"
         android:hint="Create Password"
@@ -88,12 +104,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/schoolName" />
+        app:layout_constraintTop_toBottomOf="@+id/occupation" />
 
     <Button
         android:id="@+id/register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="SignUp_btn"
         android:text="Register"
         android:textColor="@color/black"
         app:backgroundTint="@color/white"
@@ -108,7 +125,7 @@
         android:id="@+id/imageButton28"
         android:layout_width="125dp"
         android:layout_height="125dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="44dp"
         android:background="#00FFFFFF"
         android:onClick="homeBtnReg"
         android:src="@drawable/logo"
