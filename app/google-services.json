@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1079119017838",
+    "project_id": "deskmate-87b40",
+    "storage_bucket": "deskmate-87b40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079119017838:android:25da91cedb37bdbb3bb37f",
+        "android_client_info": {
+          "package_name": "com.deskmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079119017838-gvoi8juaor8l2sdqrk0ldnn1ja8duoso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5oUFDK6gi43FHP5NGqYbazywtft0MRg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079119017838-gvoi8juaor8l2sdqrk0ldnn1ja8duoso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
