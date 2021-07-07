@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SS_LOM_THEORY_01">
+
+    <TextView
+        android:id="@+id/textView119"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laws of Motion"
+        android:textColor="#7D40E8"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <TextView
+        android:id="@+id/textView120"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="What is Motion in a Straight Line? "
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView119" />
+
+    <TextView
+        android:id="@+id/textView121"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="If an object changes its position with respect to its surroundings with time, then it is called in motion. It is a change in the position of an object over time. Motion in a straight line is nothing but linear motion. As the name suggests, it’s in a particular straight line, thus it can be said that it uses only one dimension. "
+        android:textColor="#040303"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView120" />
+
+    <TextView
+        android:id="@+id/textView122"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Types of Linear Motion "
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView121" />
+
+    <TextView
+        android:id="@+id/textView123"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="The linear motion, also called the Rectilinear Motion can be of two types: "
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView122" />
+
+    <TextView
+        android:id="@+id/textView124"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="1. Uniform liThe linear motion, also called the Rectilinear  near motion with constant velocity or zero acceleration "
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView123" />
+
+    <TextView
+        android:id="@+id/textView125"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="2. Non-Uniform linear motion with variable velocity or non-zero acceleration "
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView124" />
+
+    <TextView
+        android:id="@+id/textView126"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Uniform Motion in a Straight Line "
+        android:textColor="#2196F3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView125" />
+
+    <TextView
+        android:id="@+id/textView127"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="If a body travels in a straight line and covers an equal amount of distance in an equal interval of time, then it is said to have uniform motion. In simple words, a body is said to have uniform acceleration if the rate of change of its velocity remains constant. "
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView126" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:onClick="nextpagelom1"
+        android:text="Next Page >"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView127" />
+</androidx.constraintlayout.widget.ConstraintLayout>
