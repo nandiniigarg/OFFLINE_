@@ -57,7 +57,10 @@ public class RegisterPage extends AppCompatActivity {
             public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
                     Users user = new Users(uName.getText().toString(), uEmail.getText().toString(), uPassword.getText().toString(),
-                            uOccupation.getText().toString(), uSchool.getText().toString())
+                            uOccupation.getText().toString(), uSchool.getText().toString());
+
+                    String ID = task.getResult().getUser().getUid();
+                    database.getReference().child("Users").child(ID).setValue(user);
                     Toast.makeText(RegisterPage.this, "User created successfully", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(RegisterPage.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
