@@ -87,13 +87,12 @@
         android:id="@+id/textView39"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:layout_marginLeft="112dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
         android:fontFamily="@font/baloo_tamma"
-        android:text="Login"
+        android:text="Corridor"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+        tools:layout_editor_absoluteY="622dp" />
 
     <TextView
         android:id="@+id/textView37"
@@ -114,22 +113,19 @@
         android:layout_marginEnd="68dp"
         android:layout_marginRight="68dp"
         android:background="#00FFFFFF"
-        android:onClick="openRegister"
+        android:onClick="Playground_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView37"
         app:srcCompat="@drawable/school" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/imageButton34"
         android:layout_width="116dp"
-        android:layout_height="112dp"
+        android:layout_height="136dp"
         android:layout_marginTop="32dp"
-        android:background="#00FFFFFF"
-        android:onClick="openLogin"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
-        app:layout_constraintHorizontal_bias="0.657"
-        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="Corridor_btn"
         app:layout_constraintTop_toBottomOf="@+id/textView36"
-        app:srcCompat="@drawable/login" />
+        app:srcCompat="@drawable/corridor_logo"
+        tools:layout_editor_absoluteX="57dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,11 +19,11 @@ public class HomePage extends AppCompatActivity {
         startActivity(intent);
 
     }
-    public void openRegister(View view){
-        Intent intent = new Intent(HomePage.this, RegisterPage.class);
+    public void Playground_btn(View view){
+        Intent intent = new Intent(HomePage.this, PlaygroundHome.class);
         startActivity(intent);
     }
-    public void openLogin(View view){
+    public void Corridor_btn(View view){
         Intent intent = new Intent(HomePage.this, LoginPage.class);
         startActivity(intent);
     }
