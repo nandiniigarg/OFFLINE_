@@ -10,11 +10,13 @@
         android:id="@+id/textView119"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
         android:text="Laws of Motion"
         android:textColor="#7D40E8"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="66dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView120"
@@ -113,11 +115,10 @@
         app:layout_constraintTop_toBottomOf="@+id/textView126" />
 
     <Button
-        android:id="@+id/button23"
+        android:id="@+id/nextPageIntent1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:onClick="nextpagelom1"
         android:text="Next Page >"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
