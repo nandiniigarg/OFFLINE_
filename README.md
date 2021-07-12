@@ -1,4 +1,4 @@
-##Deskmate##
+#Deskmate
 
 With the health and growth of school students in our minds, we started Deskmate to primarily help educate the students stuck in the pandemic and provide them a school like experience from the comfort of their homes. We provide all basic requirements for a student to learn like precise chapter-wise notes, tests at regular intervals, regular doubt-sessions and a wide array of formula-based calculators to help students slip through those last minute revision/practice sessions as quickly as possible. 
 We are trying to create a social platform devoted to education, better networking and healthy competitions between students sitting at home getting online education and also providing them with clear cut solutions without having them browse for an hour before getting the suitable solution.
