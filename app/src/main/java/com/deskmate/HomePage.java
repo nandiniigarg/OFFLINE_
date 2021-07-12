@@ -28,7 +28,7 @@ public class HomePage extends AppCompatActivity {
         startActivity(intent);
     }
     public void openStudy(View view){
-        Intent intent = new Intent(HomePage.this, StudyHome.class);
+        Intent intent = new Intent(HomePage.this, RegisterPage.class);
         startActivity(intent);
     }
 }

@@ -38,7 +38,7 @@ public class RegisterPage extends AppCompatActivity {
         uSchool = (EditText) findViewById(R.id.schoolName);
         uPassword = (EditText) findViewById(R.id.password);
         uOccupation = (EditText) findViewById(R.id.occupation);
-        getSupportActionBar().hide();
+
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
 
